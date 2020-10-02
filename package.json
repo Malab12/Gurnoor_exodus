@@ -4,12 +4,9 @@
   "description": "This is for IEEE Exodus competition",
   "main": "index.html",
   "scripts": {
-    "start": "npm run watch:all",
+    "start": "npm run lite",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lite": "lite-server",
-    "scss": "node-sass -o css/ css/",
-    "watch:scss": "onchange \"css/*.scss\" -- npm run scss",
-    "watch:all": "parallelshell \"npm run watch:scss\" \"npm run lite\" "
+    "lite": "lite-server"
   },
   "repository": {
     "type": "git",
@@ -22,8 +19,6 @@
   },
   "homepage": "https://github.com/Malab12/Gurnoor_exodus#readme",
   "devDependencies": {
-    "lite-server": "^2.5.4",
-    "onchange": "^3.3.0",
-    "parallelshell": "^3.0.1"
+    "lite-server": "^2.5.4"
   }
 }
