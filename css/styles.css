@@ -2,6 +2,8 @@
 body {
 	background-color: #FDF6E5;
 	margin: 0px 20px 0px 20px;
+	display: flex;
+  	flex-direction: column;
 }
 
 .main-image {
@@ -20,8 +22,9 @@ body {
 .intro {
 	color: white;
 	position: absolute;
-	text-align: center;
 	top: 35%;
+	text-align: center;
+   	width: 100%;
 }
 
 .row {
@@ -83,6 +86,12 @@ hr.rounded {
 	}
 }
 
+@media (max-width: 425px) {
+	.intro {
+		display: none;
+	}
+}
+
 /* Navbar styles */
 .topnav {
 	background-color: #A95209;
@@ -114,16 +123,17 @@ hr.rounded {
 
 /* Footer Styles */
 footer {
-	position: fixed;
-	bottom: 0;
+	position: static;
+	flex:50px;/*or just height:50px;*/
+  	margin-top: auto;
 	color: #f2f2f2;
-	padding: 0;
 }
-.vis {
+/*.vis {
 	display: none;
-}
+}*/
 
-.footer-distributed {
+footer {
+	position: static;
 	background-color: #E4AB89;
 	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
 	box-sizing: border-box;
@@ -144,11 +154,11 @@ footer {
 	width: 40%;
 }
 
-.footer-distributed h3 {
+.footer-row h3 {
 	color: #f2f2f2;
 	margin: 0;
 }
-.footer-distributed .footer-links{
+.footer-links{
 	color:  #ffffff;
 	margin: 20px 0 12px;
 	padding: 0;
@@ -203,12 +213,12 @@ footer a:hover {
 	width: 20%;
 }
 
-.footer-distributed .footer-center p a{
+.footer-center p a{
 	color:  #5383d3;
-	text-decoration: none;;
+	text-decoration: none;
 }
 
-.footer-distributed .footer-company-about{
+.footer-company-about{
 	line-height: 20px;
 	color:  #92999f;
 	font-size: 13px;
@@ -216,7 +226,7 @@ footer a:hover {
 	margin: 0;
 }
  
-.footer-distributed .footer-restraunt-about span{
+.footer-restraunt-about span{
 	display: block;
 	color:  #ffffff;
 	font-size: 14px;
@@ -224,7 +234,7 @@ footer a:hover {
 	margin-bottom: 20px;
 }
  
-.footer-distributed .footer-icons{
+.footer-icons{
 	margin-top: 25px;
 }
  
@@ -253,23 +263,23 @@ footer a:hover {
 	}
 }
 
-@media (max-width: 880px) {
+@media (max-width: 600px) {
  
-	.footer-distributed{
+	footer{
 		font: bold 14px sans-serif;
 	
 	}
  
-	.footer-distributed .footer-left,
-	.footer-distributed .footer-center,
-	.footer-distributed .footer-right{
+	.footer-left,
+	.footer-center,
+	.footer-right{
 		display: block;
 		width: 100%;
 		margin-bottom: 40px;
 		text-align: center;
 	}
  
-	.footer-distributed .footer-center i{
+	.footer-center i{
 		margin-left: 0;
 	}
 	.main {
