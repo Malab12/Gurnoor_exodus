@@ -9,7 +9,7 @@
 </head>
 <body>
 	<div class="topnav" id="myTopnav">
-		<a href="#home">Home</a>
+		<a href="index.html">Home</a>
 		<a href="#menu" class="active">Menu</a>
 		<a href="#specials">Specials</a>
 		<a href="#contact">Contact</a>
@@ -92,22 +92,22 @@
 			}
 		}
 
-        function myFunction1() {
-            var input, filter, ul, li, a, i;
-            input = document.getElementById("mySearch");
-            filter = input.value.toUpperCase();
-            ul = document.getElementById("myMenu");
-            li = ul.getElementsByTagName("li");
+        // function myFunction1() {
+        //     var input, filter, ul, li, a, i;
+        //     input = document.getElementById("mySearch");
+        //     filter = input.value.toUpperCase();
+        //     ul = document.getElementById("myMenu");
+        //     li = ul.getElementsByTagName("li");
 
-            for (i = 0; i < li.length; i++) {
-                a = li[i].getElementsByTagName("a")[0];
-                if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
-                    li[i].style.display = "";
-                } else {
-                    li[i].style.display = "none";
-                }
-            }
-        }
+        //     for (i = 0; i < li.length; i++) {
+        //         a = li[i].getElementsByTagName("a")[0];
+        //         if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+        //             li[i].style.display = "";
+        //         } else {
+        //             li[i].style.display = "none";
+        //         }
+        //     }
+        // }
 
         function openMenu(evt, restrName) {
             var i, tabcontent, tablinks;
