@@ -10,6 +10,11 @@ body {
   	flex-direction: column;
 }
 
+h1 {
+	width: 100%;
+	text-align: center;
+}
+
 /* Navbar styles */
 .topnav {
 	background-color: #A95209;
