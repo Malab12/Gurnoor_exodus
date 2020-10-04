@@ -173,7 +173,7 @@ btn.onclick = function() {
     document.querySelector('.modal-content').appendChild(node);
 
     var node = document.createElement('h3');
-    var str = String("Thank you! Please Order again :-)" );
+    var str = String("Thank you! Please Order again :-)");
     node.appendChild(document.createTextNode(str));
     document.querySelector('.modal-content').appendChild(node);
 
