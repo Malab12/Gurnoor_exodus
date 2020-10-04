@@ -1,6 +1,7 @@
 /* Basic styles for webpage structure */
 * {
   box-sizing: border-box;
+	font-family: sans-serif;
 }
 
 body {
