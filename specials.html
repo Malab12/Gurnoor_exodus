@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>exodus</title>
-	<link href="css/about.css" rel="stylesheet">
+	<link href="css/specials.css" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
 </head>
 <body>
@@ -17,6 +17,34 @@
 		<a href="javascript:void(0);" class="icon" onclick="myFunction()">
 			<i class="fa fa-bars fa-lg"></i>
 		</a>
+    </div>
+
+    <div class="container">
+        <div class="h"><h1>Special events</h1></div>
+        <div class="row">
+            <div class="col" onclick="redirect()">
+                <img src="img/wedding2.jpg" alt="wedding">
+                <div class="cont">
+                    <h2>Weddings</h2>
+                    <p>Weddings are an important in our lives, more so in our current situation where the only thing linking us to our past is our traditions and customs. Experience an authentic wedding from your choice of earth cultures and experience the joy our ancestors must have felt during such events. We provide you with the state of the art AI wedding planner and virtual reality facilities allowing you to experience the stories of your grandmother's time. To register, please click here</p>
+                </div>
+            </div>
+            <div class="col" onclick="redirect()">
+                <img src="img/birthday2.jpg" alt="birthday">
+                <div class="cont">
+                    <h2>Birthdays</h2>
+                    <p>Birthdays are milestones in our lives reminding us that we have overcome all obstacles in our path to live another year. What better way to celebrate this momentous occassion but enjoying genuine high quality earth culture food with your loved ones?. To book your next birthday celebration, please click here</p>
+                </div>
+            </div>
+            <div class="col" onclick="redirect()">
+                <img src="img/party.jpg" alt="wedding">
+                <div class="cont">
+                    <h2>Parties</h2>
+                    <p>Want to relax with your friends after a long day asteroid mining? want to experience authentic earth cuisine while fondly remembering the days gone by? Book your next get-together at the Galactic Restaurant by clicking here</p>
+                </div>
+
+            </div>
+        </div>
     </div>
 
 	<footer>
@@ -47,7 +75,7 @@
 			</div>
 			<div class="footer-right">
 				<p class="footer-restraunt-about">
-					<span>About the Restraunt</span>
+					<span>About the Restaurant</span>
 					A labor of love and passion, providing all inahbitants of the spaceship Zeta with amazing food in these trying times.
 				</p>
 			</div>
@@ -60,8 +88,9 @@
 				x.className += " responsive";
 			} else {
 				x.className = "topnav";
-			}
+            }
         }
+        function redirect() {window.location.href = "contact.html";}
 	</script>
 </body>
 </html>
