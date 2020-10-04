@@ -4,6 +4,7 @@ body {
 	margin: 0px 20px 0px 20px;
 	display: flex;
   	flex-direction: column;
+	font-family: sans-serif;
 }
 
 .main-image {
