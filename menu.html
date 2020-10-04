@@ -25,8 +25,7 @@
        <button class="tablinks" onclick="openMenu(event, 'Starters')" id="defaultOpen">Starters</button>
        <button class="tablinks" onclick="openMenu(event, 'mainCourse')">Main Course</button>
        <button class="tablinks" onclick="openMenu(event, 'Desserts')">Desserts</button>
-       <button class="tablinks" onclick="openMenu(event, 'Beverages')">Beverage</button>
-       <button class="tablinks" onclick="openMenu(event, 'Specials')">Specials</button>
+       <button class="tablinks" onclick="openMenu(event, 'Beverages')">Beverages</button>
    </div>
 
    <div id="Starters" class="tabcontent">
@@ -38,9 +37,9 @@
 			    <h4><b>John Doe</b></h4>
 			    <p>Architect & Engineer</p>
 			  </div>
-			  <button id="decrement">-</button>
-			  <span>0</span>
-			  <button id="increment">+</button>
+			  <button onclick="decrement(0, 'start')">-</button>
+			  <span id="it1">0</span>
+			  <button onclick="increment(0, 'start')">+</button>
 			</div>
 
 			<div class="card column">
@@ -49,9 +48,9 @@
 			    <h4><b>John Doe</b></h4>
 			    <p>Architect & Engineer</p>
 			  </div>
-			  <button id="decrement">-</button>
-			  <span>0</span>
-			  <button id="increment">+</button>
+			  <button onclick="decrement(1, 'start')">-</button>
+			  <span id="it2">0</span>
+			  <button onclick="increment(1, 'start')">+</button>
 			</div>
 
 			<div class="card column">
@@ -60,42 +59,9 @@
 			    <h4><b>John Doe</b></h4>
 			    <p>Architect & Engineer</p>
 			  </div>
-			  <button id="decrement">-</button>
-			  <span>0</span>
-			  <button id="increment">+</button>
-			</div>
-
-			<div class="card column">
-			  <img src="img/menu.jpg" class="card-img">
-			  <div class="container">
-			    <h4><b>John Doe</b></h4>
-			    <p>Architect & Engineer</p>
-			  </div>
-			  <button id="decrement">-</button>
-			  <span>0</span>
-			  <button id="increment">+</button>
-			</div>
-
-			<div class="card column">
-			  <img src="img/menu.jpg" class="card-img">
-			  <div class="container">
-			    <h4><b>John Doe</b></h4>
-			    <p>Architect & Engineer</p>
-			  </div>
-			  <button id="decrement">-</button>
-			  <span>0</span>
-			  <button id="increment">+</button>
-			</div>
-
-			<div class="card column">
-			  <img src="img/menu.jpg" class="card-img">
-			  <div class="container">
-			    <h4><b>John Doe</b></h4>
-			    <p>Architect & Engineer</p>
-			  </div>
-			  <button id="decrement">-</button>
-			  <span>0</span>
-			  <button id="increment">+</button>
+			  <button onclick="decrement(2, 'start')">-</button>
+			  <span id="it3">0</span>
+			  <button onclick="increment(2, 'start')">+</button>
 			</div>
        </div>
    </div>
@@ -204,39 +170,6 @@
 			  <span>0</span>
 			  <button id="increment">+</button>
 			</div>
-
-			<div class="card column">
-			  <img src="img/menu.jpg" class="card-img">
-			  <div class="container">
-			    <h4><b>John Doe</b></h4>
-			    <p>Architect & Engineer</p>
-			  </div>
-			  <button id="decrement">-</button>
-			  <span>0</span>
-			  <button id="increment">+</button>
-			</div>
-
-			<div class="card column">
-			  <img src="img/menu.jpg" class="card-img">
-			  <div class="container">
-			    <h4><b>John Doe</b></h4>
-			    <p>Architect & Engineer</p>
-			  </div>
-			  <button id="decrement">-</button>
-			  <span>0</span>
-			  <button id="increment">+</button>
-			</div>
-
-			<div class="card column">
-			  <img src="img/menu.jpg" class="card-img">
-			  <div class="container">
-			    <h4><b>John Doe</b></h4>
-			    <p>Architect & Engineer</p>
-			  </div>
-			  <button id="decrement">-</button>
-			  <span>0</span>
-			  <button id="increment">+</button>
-			</div>
        </div>
    </div>
    <div id="Beverages" class="tabcontent">
@@ -244,109 +177,6 @@
 	    <div class="row">
        		<div class="card column">
 			  <img src="img/specials.png" class="card-img">
-			  <div class="container">
-			    <h4><b>John Doe</b></h4>
-			    <p>Architect & Engineer</p>
-			  </div>
-			  <button id="decrement">-</button>
-			  <span>0</span>
-			  <button id="increment">+</button>
-			</div>
-
-			<div class="card column">
-			  <img src="img/menu.jpg" class="card-img">
-			  <div class="container">
-			    <h4><b>John Doe</b></h4>
-			    <p>Architect & Engineer</p>
-			  </div>
-			  <button id="decrement">-</button>
-			  <span>0</span>
-			  <button id="increment">+</button>
-			</div>
-
-			<div class="card column">
-			  <img src="img/menu.jpg" class="card-img">
-			  <div class="container">
-			    <h4><b>John Doe</b></h4>
-			    <p>Architect & Engineer</p>
-			  </div>
-			  <button id="decrement">-</button>
-			  <span>0</span>
-			  <button id="increment">+</button>
-			</div>
-
-			<div class="card column">
-			  <img src="img/menu.jpg" class="card-img">
-			  <div class="container">
-			    <h4><b>John Doe</b></h4>
-			    <p>Architect & Engineer</p>
-			  </div>
-			  <button id="decrement">-</button>
-			  <span>0</span>
-			  <button id="increment">+</button>
-			</div>
-
-			<div class="card column">
-			  <img src="img/menu.jpg" class="card-img">
-			  <div class="container">
-			    <h4><b>John Doe</b></h4>
-			    <p>Architect & Engineer</p>
-			  </div>
-			  <button id="decrement">-</button>
-			  <span>0</span>
-			  <button id="increment">+</button>
-			</div>
-
-			<div class="card column">
-			  <img src="img/menu.jpg" class="card-img">
-			  <div class="container">
-			    <h4><b>John Doe</b></h4>
-			    <p>Architect & Engineer</p>
-			  </div>
-			  <button id="decrement">-</button>
-			  <span>0</span>
-			  <button id="increment">+</button>
-			</div>
-       </div>
-   </div>
-   <div id="Specials" class="tabcontent">
-	    <h2 class="title-text">SPECIALS</h2>
-	    <div class="row">
-       		<div class="card column">
-			  <img src="img/specials.png" class="card-img">
-			  <div class="container">
-			    <h4><b>John Doe</b></h4>
-			    <p>Architect & Engineer</p>
-			  </div>
-			  <button id="decrement">-</button>
-			  <span>0</span>
-			  <button id="increment">+</button>
-			</div>
-
-			<div class="card column">
-			  <img src="img/menu.jpg" class="card-img">
-			  <div class="container">
-			    <h4><b>John Doe</b></h4>
-			    <p>Architect & Engineer</p>
-			  </div>
-			  <button id="decrement">-</button>
-			  <span>0</span>
-			  <button id="increment">+</button>
-			</div>
-
-			<div class="card column">
-			  <img src="img/menu.jpg" class="card-img">
-			  <div class="container">
-			    <h4><b>John Doe</b></h4>
-			    <p>Architect & Engineer</p>
-			  </div>
-			  <button id="decrement">-</button>
-			  <span>0</span>
-			  <button id="increment">+</button>
-			</div>
-
-			<div class="card column">
-			  <img src="img/menu.jpg" class="card-img">
 			  <div class="container">
 			    <h4><b>John Doe</b></h4>
 			    <p>Architect & Engineer</p>
@@ -414,66 +244,6 @@
 			</div>
 	</footer>
 
-	<script>
-		function myFunction() {
-			var x = document.getElementById("myTopnav");
-			if (x.className === "topnav") {
-				x.className += " responsive";
-			} else {
-				x.className = "topnav";
-			}
-		}
-
-        // function myFunction1() {
-        //     var input, filter, ul, li, a, i;
-        //     input = document.getElementById("mySearch");
-        //     filter = input.value.toUpperCase();
-        //     ul = document.getElementById("myMenu");
-        //     li = ul.getElementsByTagName("li");
-
-        //     for (i = 0; i < li.length; i++) {
-        //         a = li[i].getElementsByTagName("a")[0];
-        //         if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
-        //             li[i].style.display = "";
-        //         } else {
-        //             li[i].style.display = "none";
-        //         }
-        //     }
-        // }
-
-        function openMenu(evt, restrName) {
-            var i, tabcontent, tablinks;
-            tabcontent = document.getElementsByClassName("tabcontent");
-            for (i =0; i < tabcontent.length; i++) {
-                tabcontent[i].style.display = "none";              
-            }
-
-            tablinks = document.getElementsByClassName("tablinks");
-            for (i = 0; i < tablinks.length; i++) {
-                tablinks[i].className = tablinks[i].className.replace(" active", "");
-            }
-
-            document.getElementById(restrName).style.display = "block";
-            evt.currentTarget.className += " active";
-        }
-
-        document.getElementById("defaultOpen").click();
-
-        var x = 0;
-		var span = document.querySelector('span'); // find the <span> element in the DOM
-		var increment = document.getElementById('increment'); // find the element with the ID 'increment'
-		var decrement = document.getElementById('decrement'); // find the element with the ID 'decrement'
-
-		increment.addEventListener('click', function () {
-		  // this function is executed whenever the user clicks the increment button
-		  span.textContent = x++;
-		});
-
-		decrement.addEventListener('click', function () {
-		  // this function is executed whenever the user clicks the decrement button
-		  span.textContent = x--;
-		});
-
-	</script>
+	<script src="js/menu.js"></script>
 </body>
 </html>
