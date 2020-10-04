@@ -42,19 +42,19 @@ function openMenu(evt, restrName) {
 
 document.getElementById("defaultOpen").click();
 
-var start = ["it1", "it2", "it3"];
+var start = ["st1", "st2", "st3"];
 var start_pri = [10, 20, 8];
 var start_quan = [0, 0, 0];
 
-var main = ["it1", "it2", "it3", "it4", "it5", "it6"];
-var main_pri = [10, 20, 8];
-var main_quan = [0, 0, 0];
+var main = ["mn1", "mn2", "mn3", "mn4", "mn5", "mn6"];
+var main_pri = [10, 20, 8, 30, 12, 15];
+var main_quan = [0, 0, 0, 0, 0, 0];
 
-var des = ["it1", "it2", "it3"];
+var des = ["ds1", "ds2", "ds3"];
 var des_pri = [10, 20, 8];
 var des_quan = [0, 0, 0];
 
-var bev = ["it1", "it2", "it3"];
+var bev = ["bv1", "bv2", "bv3"];
 var bev_pri = [10, 20, 8];
 var bev_quan = [0, 0, 0];
 
@@ -70,7 +70,7 @@ function increment(ind, cat) {
     }
 
     else if(cat == 'des'){
-        de_quan[ind]++;
+        des_quan[ind]++;
         document.getElementById(des[ind]).innerHTML = des_quan[ind];
     }
 
@@ -93,7 +93,7 @@ function decrement(ind, cat) {
     }
 
     else if(cat == 'des' && des_quan[ind]!=0){
-        de_quan[ind]--;
+        des_quan[ind]--;
         document.getElementById(des[ind]).innerHTML = des_quan[ind];
     }
 
