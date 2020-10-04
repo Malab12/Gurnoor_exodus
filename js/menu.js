@@ -42,18 +42,22 @@ function openMenu(evt, restrName) {
 
 document.getElementById("defaultOpen").click();
 
+var start_name = ["Item 1", "Item2", "Item3"];
 var start = ["st1", "st2", "st3"];
 var start_pri = [10, 20, 8];
 var start_quan = [0, 0, 0];
 
+var main_name = ["Item 1", "Item2", "Item3", "Item4", "Item5", "Item6"];
 var main = ["mn1", "mn2", "mn3", "mn4", "mn5", "mn6"];
 var main_pri = [10, 20, 8, 30, 12, 15];
 var main_quan = [0, 0, 0, 0, 0, 0];
 
+var des_name = ["Item 1", "Item2", "Item3"];
 var des = ["ds1", "ds2", "ds3"];
 var des_pri = [10, 20, 8];
 var des_quan = [0, 0, 0];
 
+var bev_name = ["Item 1", "Item2", "Item3"];
 var bev = ["bv1", "bv2", "bv3"];
 var bev_pri = [10, 20, 8];
 var bev_quan = [0, 0, 0];
@@ -102,4 +106,87 @@ function decrement(ind, cat) {
         document.getElementById(bev[ind]).innerHTML = bev_quan[ind];
     }
     
+}
+
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal
+btn.onclick = function() {
+    modal.style.display = "block";
+
+    var sum=0;
+    var ol = document.getElementById("receipt");
+    while(ol.firstChild) ol.removeChild(ol.firstChild);
+
+    // For receipt generation based on current quantities selected
+    var i;
+    for (i = 0; i < start.length; i++) {
+      if(start_quan[i] != 0){
+        var node = document.createElement('li');
+        sum +=start_pri[i]*start_quan[i];
+        var str = String(start_name[i] + ":    Z" + start_pri[i]*start_quan[i]);
+        node.appendChild(document.createTextNode(str));
+        document.querySelector('ol').appendChild(node);
+      }
+    }
+
+    for (i = 0; i < main.length; i++) {
+      if(main_quan[i] != 0){
+        var node = document.createElement('li');
+        sum +=main_pri[i]*main_quan[i];
+        var str = String(main_name[i] + ":    Z" + main_pri[i]*main_quan[i]);
+        node.appendChild(document.createTextNode(str));
+        document.querySelector('ol').appendChild(node);
+      }
+    }
+
+    for (i = 0; i < des.length; i++) {
+      if(des_quan[i] != 0){
+        var node = document.createElement('li');
+        sum +=des_pri[i]*des_quan[i];
+        var str = String(des_name[i] + ":    Z" + des_pri[i]*des_quan[i]);
+        node.appendChild(document.createTextNode(str));
+        document.querySelector('ol').appendChild(node);
+      }
+    }
+
+    for (i = 0; i < bev.length; i++) {
+      if(bev_quan[i] != 0){
+        var node = document.createElement('li');
+        sum +=bev_pri[i]*bev_quan[i];
+        var str = String(bev_name[i] + ":   Z" + bev_pri[i]*bev_quan[i]);
+        node.appendChild(document.createTextNode(str));
+        document.querySelector('ol').appendChild(node);
+      }
+    }
+
+    var node = document.createElement('h2');
+    var str = String("Your total bill amount is " + sum + " Zetas(Z)" );
+    node.appendChild(document.createTextNode(str));
+    document.querySelector('.modal-content').appendChild(node);
+
+    var node = document.createElement('h3');
+    var str = String("Thank you! Please Visit again)" );
+    node.appendChild(document.createTextNode(str));
+    document.querySelector('.modal-content').appendChild(node);
+
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
 }
