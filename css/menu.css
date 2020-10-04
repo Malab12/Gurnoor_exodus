@@ -1,6 +1,6 @@
 /* Basic styles for webpage structure */
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -239,4 +239,66 @@ footer a:hover {
 		font-size: auto;
 	}
  
+}
+
+.title-text {
+	width: 100%;
+	text-align: center;
+}
+
+/*for the cards*/
+.card {
+  margin: 20px 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 5px; /* 5px rounded corners */
+}
+
+/* Add rounded corners to the top left and the top right corner of the image */
+.card-img {
+  margin-top: 10px;
+  border-radius: 5px 5px 0 0;
+  object-fit:cover;
+  width: 100%;
+  height: 250px;
+}
+
+
+/* Add some padding inside the card container */
+.container {
+  padding: 2px 16px;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 30%;
+}
+
+.row {
+	margin: 0 auto;
+	width: 100%;
+}
+
+.con-column {
+  float: left;
+  width: 30%;
+}
+
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 1300px) {
+  .column {
+    width: 45%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 880px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
 }
