@@ -42,22 +42,22 @@ function openMenu(evt, restrName) {
 
 document.getElementById("defaultOpen").click();
 
-var start_name = ["Item 1", "Item2", "Item3"];
+var start_name = ["Alien Fingers", "Rocket Twisters", "Space Rocks"];
 var start = ["st1", "st2", "st3"];
 var start_pri = [10, 20, 8];
 var start_quan = [0, 0, 0];
 
-var main_name = ["Item 1", "Item2", "Item3", "Item4", "Item5", "Item6"];
+var main_name = ["Kanaroos Marsala", "Xeep Lasagna", "Cobb Salad", "Orqa Pasta", "Faon with Chunky Applesause", "Stuffed Portobello Mushrooms with Crispy Xeep Cheese"];
 var main = ["mn1", "mn2", "mn3", "mn4", "mn5", "mn6"];
 var main_pri = [10, 20, 8, 30, 12, 15];
 var main_quan = [0, 0, 0, 0, 0, 0];
 
-var des_name = ["Item 1", "Item2", "Item3"];
+var des_name = ["Moon Rock Brownies", "Galaxy Popcorn", "Alien Cupcakes"];
 var des = ["ds1", "ds2", "ds3"];
 var des_pri = [10, 20, 8];
 var des_quan = [0, 0, 0];
 
-var bev_name = ["Item 1", "Item2", "Item3"];
+var bev_name = ["Cold Brewed Coffee", "Butterbeer", "Assorted Drinks"];
 var bev = ["bv1", "bv2", "bv3"];
 var bev_pri = [10, 20, 8];
 var bev_quan = [0, 0, 0];
